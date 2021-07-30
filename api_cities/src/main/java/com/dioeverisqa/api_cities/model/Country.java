@@ -14,7 +14,7 @@ import javax.persistence.Table;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
+@Entity(name = "Country")
 @Table(name = "pais")
 public class Country {
 
@@ -26,6 +26,5 @@ public class Country {
     private String portugueseName;
     @Column(name = "sigla")
     private String code;
-    @Column
     private Integer bacen;
 }
