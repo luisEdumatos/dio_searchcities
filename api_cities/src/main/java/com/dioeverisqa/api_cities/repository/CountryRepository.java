@@ -1,4 +1,7 @@
 package com.dioeverisqa.api_cities.repository;
 
-public class CountryRepository {
+import com.dioeverisqa.api_cities.model.Country;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CountryRepository extends JpaRepository<Country, Long> {
 }
