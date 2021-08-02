@@ -27,9 +27,8 @@ public class City {
     @Column(name = "nome")
     private String name;
 
-    @ManyToOne
-    @JoinColumn(name = "estado", referencedColumnName = "id")
-    private State state;
+    private Integer uf;
+
     private Integer ibge;
 
     @Column(name = "lat_lon")
