@@ -29,6 +29,7 @@ public class State {
     private String name;
     private String uf;
     private Integer ibge;
+
     @ManyToOne
     @JoinColumn(name = "pais", referencedColumnName = "id")
     private Country country;
