@@ -27,7 +27,9 @@ public class City {
     @Column(name = "nome")
     private String name;
 
-    private Integer uf;
+    @ManyToOne
+    @JoinColumn(name = "uf", referencedColumnName = "id")
+    private State state;
 
     private Integer ibge;
 
